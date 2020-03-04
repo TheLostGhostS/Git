@@ -15,3 +15,13 @@ git commit -m "*descripcion*"; subirlo al stage y ponerle descripcion
 git push; subir los archivos
 
 git pull; bajar los archivos
+
+git diff; revisa la diferencia creadas
+
+git branch; vez los branches que tienes y los creas si pones un nombre despues de eso
+
+git reset; elimina los cambios que tengas
+
+git checkout; cambia el branch en el que estas
+
+git merge ; unir dos branches
