@@ -1,0 +1,17 @@
+git init; crear repositorio en git
+
+git clone https://github.com/*usuario*/*repositorio*; ligar repositorio
+
+git config --global user.name "*nombre de usuario*"; ligar con cuenta
+
+git status; ver cambios locales
+
+cd ; entrar a carpetas
+
+git add .; agregar todo al stage
+
+git commit -m "*descripcion*"; subirlo al stage y ponerle descripcion
+
+git push; subir los archivos
+
+git pull; bajar los archivos
