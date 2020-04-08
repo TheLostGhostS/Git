@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Numero</title>
+	<script>
+		
+		function myFunction() {
+		
+			var x = [Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*11), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10)]
+			var z=0, h=[5, 6];
+			var y = document.getElementById("num1").value;
+
+			document.getElementsByClassName("si")[0].style.display="none";
+			document.getElementsByClassName("si")[1].style.display="none";
+			document.getElementsByClassName("si")[2].style.display="none";
+			document.getElementsByClassName("si")[3].style.display="none";
+
+			for (z = 0; z < y ; z++){
+			    h[z]=x[x.length-(z+1)]
+			}
+			h.reverse();
+			document.getElementById("dema").innerHTML=x;
+			document.getElementById("demo").innerHTML=h;
+		}
+		
+		
+		
+		function contador(){}
+	</script>
+
+<head>
+<body style="background-color:green;">
+	<form>
+		<label class="si" for="num1" style="margin-top:20px;margin-left:350px;position:absolute;font-size:40px;color:#ffffff;">Cuanto quiere agarrar del array??: </label>
+		<input class="si" type="number"  style="margin-top:20px;margin-left:920px;position:absolute;font-size:40px;" name="num1" id="num1" maxlength="1" placeholder="Ingrese aqui" required>
+		<input type="text" required style="display:none">		
+		<input class="si" type="submit" onclick="myFunction()" value="Submit" style="border:#ffffff solid 2px;color:#ffffff;background-color:#00ff00;margin-top:180px;margin-left:800px;position:absolute;font-size:40px;"> 
+		<input class="si" type="Reset" value="Reset" style="border:#ffffff solid 2px;color:#ffffff;background-color:#00ff00;margin-top:180px;margin-top:180px;margin-left:1000px;position:absolute;font-size:40px;">
+	</form>
+	<p id="dema" style="margin-top:300px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p> 
+	<p id="demo" style="margin-top:400px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p>  
+	
+	
+	
+	
+</body>
+</html>

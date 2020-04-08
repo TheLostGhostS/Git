@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+<head>
+
+<body style="background-color:green;">
+<script>
+		
+
+		
+
+
+ </script>
+
+<script>	
+		var a=0, i=0;	
+		var g;
+	
+		function Add() {
+			if(a==1){
+				alert("Ya pusiste el valor, ahora corre el programa o resetea todo");
+			}
+			if(a==0){
+				g=document.getElementById("hola").value;
+				
+				a++;
+				document.getElementById("hola").value="";
+			}
+
+		}
+		
+		function Reset() {
+			
+			var y;
+			g="";
+			
+			a=0;
+			document.getElementById("demo").innerHTML="";
+		}
+
+		function Display()  {
+			var l;
+			
+			
+			l=g.slice(0, 3);
+			
+
+			document.getElementById("demo").innerHTML=l;
+		}	
+
+
+
+</script>    
+
+
+ 
+		<input type="text" id="hola" name="hola"> 
+	
+		<button onclick="Add()">Add</button>
+		<button onclick="Display()">Run</button>
+		<button onclick="Reset()">Reset</button>
+		
+
+	<p id="demo" style="margin-top:400px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p>  
+	
+	
+	
+
+</body>
+</html>

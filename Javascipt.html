@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<script>
+		
+		function myFunction() {
+		
+			x=document.getElementById("num1").value;
+			y=document.getElementById("num2").value;
+			
+			document.getElementsByClassName("si")[0].style.display="none";
+			document.getElementsByClassName("si")[1].style.display="none";
+			document.getElementsByClassName("si")[2].style.display="none";
+			document.getElementsByClassName("si")[3].style.display="none";
+			document.getElementsByClassName("si")[4].style.display="none";
+			document.getElementsByClassName("si")[5].style.display="none";
+			
+			z=(x<y);
+			if(z==true){
+			    document.getElementById("demo").innerHTML=y + " es mayor";
+			}
+			if(z==false){
+			    document.getElementById("demo").innerHTML=x + " es mayor";
+			}
+			
+		}
+		
+		
+		
+		function contador(){}
+	</script>
+
+<head>
+<body style="background-color:green;">
+	<form>
+		<label class="si" for="num1" style="margin-top:20px;margin-left:600px;position:absolute;font-size:40px;color:#ffffff;">Ingrese numero 1: </label>
+		<input class="si" type="number"  style="margin-top:20px;margin-left:920px;position:absolute;font-size:40px;" name="num1" id="num1" maxlength="3" placeholder="Ponga un numero entero" required>
+		<label class="si" for="num2" style="margin-top:100px;margin-left:600px;position:absolute;font-size:40px;color:#ffffff;">Ingrese numero 2: </label>
+		<input class="si" type="number" style="margin-top:100px;margin-left:920px;position:absolute;font-size:40px;" name="num2" id="num2" maxlength="3" placeholder="Ponga un numero entero" required>
+		<input type="text" required style="display:none">		
+		<input class="si" type="submit" onclick="myFunction()" value="Submit" style="border:#ffffff solid 2px;color:#ffffff;background-color:#00ff00;margin-top:180px;margin-left:800px;position:absolute;font-size:40px;"> 
+		<input class="si" type="Reset" value="Reset" style="border:#ffffff solid 2px;color:#ffffff;background-color:#00ff00;margin-top:180px;margin-top:180px;margin-left:1000px;position:absolute;font-size:40px;">
+	</form>
+	<p id="demo" style="margin-top:400px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p>  
+	
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+	<script>
+			
+
+			function myFunction() {
+				var x = [Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10)];
+				var i, f, m=0, d=0, c, l=[undefined], g=0, o;
+				
+				for(i=0; i < 10; i++){
+					c=0;	
+					for(f=0; f < (10); f++){
+					
+						if(i==f){continue;}
+						if(i>f){continue;}
+						if(x[f]==undefined){continue;}
+						if(x[i]==x[f]){c++;}
+						
+						
+					}
+					if(c==d){l[g]=x[i]; g++;}
+					if(c>d){
+						
+						for(o=0; o < g; o++){
+							l[o]=undefined;
+							
+						}
+					
+						g=0;
+						d=c;
+						l[g]=x[i];
+						g++;
+					}
+					
+				}
+				document.getElementById("dema").innerHTML=x;
+				document.getElementById("demo").innerHTML=l + " se repite mas veces que los demas";
+				
+				
+			}
+			
+				
+			
+			
+			
+			
+			
+	</script>
+<head>
+<body style="background-color:green;">
+	<button onclick="myFunction()">Script</button>
+	<p id="dema" style="margin-top:300px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p> 
+	<p id="demo" style="margin-top:400px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p>  
+	
+	
+	
+
+</body>
+</html>
+
+

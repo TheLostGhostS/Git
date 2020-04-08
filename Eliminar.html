@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Numero</title>
+	<script>
+		var x = [Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*11), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10), Math.floor(Math.random()*10)]
+		document.getElementById("dema").innerHTML=x;
+		function myFunction() {
+		
+			
+			x.pop();
+
+
+
+
+			document.getElementById("dema").innerHTML=x;
+		
+		}
+		
+		
+		
+		
+	</script>
+
+<head>
+<body style="background-color:green;">
+	<button onclick="myFunction()">Eliminar<button>  
+	<p id="dema" style="margin-top:300px;text-align:center;width:100%;position:absolute;font-size:100px;color:white;"></p> 
+ 
+	
+	
+	
+	
+</body>
+</html>
